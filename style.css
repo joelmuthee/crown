@@ -349,14 +349,16 @@ header {
     }
 
     .hero p {
-        font-size: 0.85rem;
-        /* Small & readable */
-        margin-bottom: 1rem;
+        font-size: 0.75rem;
+        /* Very small but readable */
+        margin-bottom: 0.75rem;
         line-height: 1.4;
         padding: 0;
         max-width: 90%;
         margin-left: auto;
         margin-right: auto;
+        color: #4b5563;
+        /* Slight contrast tweak */
     }
 
     .hero {
