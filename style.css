@@ -145,6 +145,7 @@ header {
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
+        z-index: 1001;
     }
 
     .nav-links {
@@ -155,18 +156,27 @@ header {
         left: 0;
         right: 0;
         background: white;
-        padding: 1rem;
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-        border-radius: 0 0 var(--radius-md) var(--radius-md);
+        padding: 2rem 1.5rem;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        border-radius: 0 0 1.5rem 1.5rem;
+        gap: 1.5rem;
+        z-index: 1000;
+        border-top: 1px solid rgba(0, 0, 0, 0.05);
     }
 
     .nav-links.active {
-        display: flex;
+        display: flex !important;
     }
 
     .nav-links li {
         width: 100%;
         text-align: center;
+    }
+
+    .nav-links a {
+        display: block;
+        font-size: 1.1rem;
+        padding: 0.5rem;
     }
 }
 
@@ -298,8 +308,9 @@ header {
 
     .hero p {
         font-size: 1rem;
-        margin-bottom: 1.5rem;
-        line-height: 1.5;
+        margin-bottom: 2rem;
+        line-height: 1.6;
+        padding: 0 1rem;
     }
 
     .hero {
