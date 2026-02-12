@@ -38,6 +38,13 @@ body {
     color: var(--text-dark);
     background-color: var(--bg-white);
     overflow-x: hidden;
+    width: 100%;
+    position: relative;
+}
+
+html {
+    overflow-x: hidden;
+    width: 100%;
 }
 
 h1,
@@ -53,7 +60,15 @@ h4 {
 .container {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 1.5rem;
+    /* Reduced generic padding */
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
+        /* Tighter padding on mobile */
+    }
 }
 
 /* Modern Header */
@@ -297,33 +312,33 @@ header {
 
 @media (max-width: 768px) {
     .hero h1 {
-        font-size: 2.5rem;
-        /* Drastically reduced for mobile */
+        font-size: 2rem;
+        /* Reduced from 2.5rem */
         margin-bottom: 0.5rem;
     }
 
     .hero h1 br {
         display: none;
-        /* Let text flow naturally on mobile */
     }
 
     .hero-content .badge {
-        margin-bottom: 1rem;
-        /* Tighter spacing */
+        margin-bottom: 0.75rem;
+        /* Reduced from 1rem */
     }
 
     .hero p {
-        font-size: 1rem;
-        margin-bottom: 2rem;
-        line-height: 1.6;
-        padding: 0 1rem;
+        font-size: 0.95rem;
+        /* Reduced from 1rem */
+        margin-bottom: 1.5rem;
+        /* Reduced from 2rem */
+        line-height: 1.5;
+        padding: 0 0.5rem;
     }
 
     .hero {
-        padding-top: 2rem;
-        /* Ensure content starts higher up */
+        padding-top: 1rem;
+        /* Reduced from 2rem */
         min-height: auto;
-        /* Allow content to dictate height on very short screens */
     }
 }
 
