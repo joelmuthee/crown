@@ -312,9 +312,10 @@ header {
 
 @media (max-width: 768px) {
     .hero h1 {
-        font-size: 2rem;
-        /* Reduced from 2.5rem */
-        margin-bottom: 0.5rem;
+        font-size: 1.75rem;
+        /* Drastically reduced */
+        margin-bottom: 0.25rem;
+        line-height: 1.1;
     }
 
     .hero h1 br {
@@ -322,23 +323,26 @@ header {
     }
 
     .hero-content .badge {
-        margin-bottom: 0.75rem;
-        /* Reduced from 1rem */
+        margin-bottom: 0.5rem;
+        font-size: 0.8rem;
+        padding: 0.4rem 1rem;
     }
 
     .hero p {
-        font-size: 0.95rem;
-        /* Reduced from 1rem */
-        margin-bottom: 1.5rem;
-        /* Reduced from 2rem */
-        line-height: 1.5;
-        padding: 0 0.5rem;
+        font-size: 0.85rem;
+        /* Small & readable */
+        margin-bottom: 1rem;
+        line-height: 1.4;
+        padding: 0;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .hero {
-        padding-top: 1rem;
-        /* Reduced from 2rem */
+        padding-top: 0.5rem;
         min-height: auto;
+        padding-bottom: 2rem;
     }
 }
 
