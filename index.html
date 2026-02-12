@@ -61,7 +61,7 @@
                 </div>
                 <div class="stat-box">
                     <div>90+</div>
-                    <div>Languages <br><span style="font-size: 0.75rem; opacity: 0.8; text-transform: none;">(English,
+                    <div>Languages <br><span style="font-size: 0.70rem; opacity: 0.8; text-transform: none;">(English,
                             Kiswahili, Hindi
                             etc)</span></div>
                 </div>
@@ -317,6 +317,19 @@
             display: block !important;
             visibility: visible !important;
             position: fixed !important;
+            bottom: 20px !important;
+            right: 20px !important;
+            left: auto !important;
+            top: auto !important;
+            max-width: 100% !important;
+            border: none !important;
+        }
+
+        @media (max-width: 600px) {
+            iframe#chat-widget {
+                right: 10px !important;
+                bottom: 10px !important;
+            }
         }
     </style>
 </body>
