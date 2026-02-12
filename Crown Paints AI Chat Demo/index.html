@@ -5,28 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crown Paints AI - Your Personal Color Consultant</title>
+    <link rel="icon" type="image/png" href="Crownpaints-Logo.png">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        .hero {
-            background-image: url('hero-bg.jpg');
-            background-size: cover;
-            background-position: center;
-            position: relative;
-        }
-
-        .hero::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
-            z-index: 1;
-        }
-    </style>
 </head>
 
 <body>
@@ -34,8 +16,7 @@
     <header class="fade-in">
         <div class="container nav">
             <div class="logo-container">
-                <img src="https://www.crownpaints.co.ke/wp-content/uploads/2016/09/crown-logo.png"
-                    alt="Crown Paints Logo" style="height: 60px;">
+                <img src="Crownpaints-Logo.png" alt="Crown Paints Logo" style="height: 70px;">
             </div>
             <ul class="nav-links">
                 <li><a href="#features">AI Features</a></li>
@@ -48,8 +29,9 @@
         <div class="container hero-content">
             <span class="badge animate-stagger-1">Automated Sales & Support</span>
             <h1 class="animate-stagger-2">The Future of <span>Customer <br>Engagement</span></h1>
-            <p class="animate-stagger-3">Experience how an autonomous AI Agent
-                can handle 24/7 color consultations, instant estimates, and dealer support for Crown Paints.</p>
+            <p class="animate-stagger-3"><strong>Fully trained on every Crown Paints product & datasheet.</strong>
+                Experience an autonomous AI Agent that handles 24/7 color consultations, real-time pricing, and
+                dealer support instantly.</p>
 
             <div class="animate-stagger-4">
                 <a href="#demo" class="cta-button">Try the AI Demo</a>
@@ -61,10 +43,10 @@
                     <div>Instant Responses</div>
                 </div>
                 <div class="stat-box">
-                    <div>3</div>
+                    <div>95+</div>
                     <div>Languages Supported <br><span
-                            style="font-size: 0.75rem; opacity: 0.8; text-transform: none;">(English, Swahili,
-                            French)</span></div>
+                            style="font-size: 0.75rem; opacity: 0.8; text-transform: none;">(Multilingual
+                            Support)</span></div>
                 </div>
                 <div class="stat-box">
                     <div>100%</div>
@@ -80,25 +62,48 @@
 
     <section class="tech-stack-section">
         <div class="container">
-            <div class="tech-content">
-                <span class="badge fade-on-scroll fade-up">GLOBAL TECHNOLOGY</span>
-                <h2 class="fade-on-scroll fade-up">Built on <span class="highlight-text">GoHighLevel</span></h2>
-                <div
-                    style="display: flex; flex-wrap: wrap; gap: 4rem; align-items: center; justify-content: center; margin-top: 3rem;">
-                    <p class="fade-on-scroll fade-left" style="flex: 1; min-width: 300px; text-align: left;">We leverage
-                        GoHighLevel, the world's leading all-in-one marketing and CRM platform trusted by over 500,000
-                        businesses globally. This isn't experimental local code—it's enterprise-grade infrastructure.
-                    </p>
-                    <div class="tech-logos fade-on-scroll fade-right" style="flex: 1; min-width: 300px; margin-top: 0;">
-                        <div class="stat-item" style="margin-bottom: 2rem;">
-                            <span class="stat-number">99.9%</span>
-                            <span class="stat-label">Uptime Reliability</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">Global</span>
-                            <span class="stat-label">Cloud Infrastructure</span>
-                        </div>
+            <div class="tech-header">
+                <span class="badge fade-on-scroll fade-up"
+                    style="background: rgba(96, 165, 250, 0.1); color: #60a5fa; border-color: rgba(96, 165, 250, 0.2);">GLOBAL
+                    INFRASTRUCTURE</span>
+                <h2 class="fade-on-scroll fade-up">Powered by <span class="highlight-text">GoHighLevel</span></h2>
+                <p class="fade-on-scroll fade-up" style="transition-delay: 0.1s;">Built on the world's leading
+                    all-in-one CRM & AI engine, trusted by over 500,000 businesses globally. This is enterprise-grade
+                    reliability, not experimental code.</p>
+            </div>
+
+            <div class="tech-grid">
+                <!-- Card 1 -->
+                <div class="tech-card fade-on-scroll fade-up" style="transition-delay: 0.2s;">
+                    <div class="icon-box">
+                        <i class="fas fa-server"></i>
                     </div>
+                    <h3>Enterprise Cloud</h3>
+                    <p>Hosted on Google Cloud Platform tiers for maximum speed, security, and redundancy across all
+                        regions.</p>
+                    <span class="tech-stat">SOC 2 Type II</span>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="tech-card fade-on-scroll fade-up" style="transition-delay: 0.3s;">
+                    <div class="icon-box">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Unmatched Uptime</h3>
+                    <p>Engineered for mission-critical operations with redundant failovers to ensure your AI never
+                        sleeps.</p>
+                    <span class="tech-stat">99.99%</span>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="tech-card fade-on-scroll fade-up" style="transition-delay: 0.4s;">
+                    <div class="icon-box">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Global Scale</h3>
+                    <p>Serving over 1.2 billion actions per month. Scalable architecture that grows with Crown Paints.
+                    </p>
+                    <span class="tech-stat">500k+ Business</span>
                 </div>
             </div>
         </div>
@@ -114,43 +119,44 @@
             <div class="features-grid">
                 <div class="feature-card fade-on-scroll fade-up" style="transition-delay: 0.1s;">
                     <div class="icon-wrapper" style="background-color: #0d47a1; color: white;">
-                        <i class="fas fa-tint"></i>
+                        <i class="fas fa-palette"></i>
                     </div>
-                    <h3>Smart Color Pairing</h3>
-                    <p>Unsure what matches? The AI analyzes current trends and color theory to suggest harmonious
-                        palettes for any room.</p>
+                    <h3>Digital Color Visualizer</h3>
+                    <p>Integrates with the <strong>Crown Colour App</strong> logic to help users visualize over 11,000
+                        shades on their own walls before buying.</p>
                 </div>
                 <div class="feature-card fade-on-scroll fade-up" style="transition-delay: 0.2s;">
                     <div class="icon-wrapper" style="background-color: #ED1C24; color: white;">
-                        <i class="fas fa-dollar-sign"></i>
+                        <i class="fas fa-tag"></i>
                     </div>
-                    <h3>Instant Estimates</h3>
-                    <p>Get real-time cost estimates based on your specific paint choices and surface area. Budgeting
-                        made simple.</p>
+                    <h3>Real-Time Pricing</h3>
+                    <p>Provides instant, up-to-date pricing from the official <strong>Crown Paints Price List</strong>
+                        (e.g., Vinyl Silk, Ruff N Tuff) and stock availability.</p>
                 </div>
                 <div class="feature-card fade-on-scroll fade-up" style="transition-delay: 0.3s;">
                     <div class="icon-wrapper" style="background-color: #f59e0b; color: white;">
                         <i class="fas fa-ruler-combined"></i>
                     </div>
                     <h3>Precision Calculator</h3>
-                    <p>Stop guessing. Input your room dimensions, and we'll calculate exactly how many liters you need,
-                        minimizing waste.</p>
+                    <p>Stop guessing. Input your room dimensions, and we'll calculate exactly how many liters of
+                        <strong>Ruff N Tuff</strong> or <strong>Vinyl Silk</strong> you need, minimizing waste.
+                    </p>
                 </div>
                 <div class="feature-card fade-on-scroll fade-up" style="transition-delay: 0.1s;">
                     <div class="icon-wrapper" style="background-color: #10b981; color: white;">
                         <i class="fas fa-language"></i>
                     </div>
                     <h3>Speak Your Language</h3>
-                    <p>Whether it's English, Swahili, or French, our AI converses fluently, making expert advice
-                        accessible to everyone.</p>
+                    <p>Our AI converses fluently in 95+ languages, making expert advice accessible to everyone
+                        regardless of their native tongue.</p>
                 </div>
                 <div class="feature-card fade-on-scroll fade-up" style="transition-delay: 0.2s;">
                     <div class="icon-wrapper" style="background-color: #8b5cf6; color: white;">
-                        <i class="fas fa-map-marked-alt"></i>
+                        <i class="fas fa-map-marker-alt"></i>
                     </div>
-                    <h3>Smart Area Allocation</h3>
-                    <p>Prospective dealers simply enter their location, and our automation instantly routes the
-                        appointment to the dedicated Area Manager for that region.</p>
+                    <h3>Showroom Locator</h3>
+                    <p>Instantly guides customers to the nearest <strong>Crown Showroom or Depot</strong> (Nairobi,
+                        Mombasa, Kisumu) based on their live location.</p>
                 </div>
                 <div class="feature-card fade-on-scroll fade-up" style="transition-delay: 0.3s;">
                     <div class="icon-wrapper" style="background-color: #f97316; color: white;">
@@ -176,46 +182,49 @@
                     <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">For Homeowners</h3>
                     <ul style="list-style: none; color: var(--text-light);">
                         <li style="margin-bottom: 0.5rem;"><i class="fas fa-check"
-                                style="color: var(--primary-red); margin-right: 0.5rem;"></i> Find the perfect shade for
-                            any mood</li>
+                                style="color: var(--primary-red); margin-right: 0.5rem;"></i> Browse <strong>11,000+
+                                shades</strong> from the Crown Colour App</li>
                         <li style="margin-bottom: 0.5rem;"><i class="fas fa-check"
-                                style="color: var(--primary-red); margin-right: 0.5rem;"></i> Get DIY tips for surface
-                            preparation</li>
+                                style="color: var(--primary-red); margin-right: 0.5rem;"></i> Get application guides for
+                            <strong>Ruff N Tuff & Vinyl Silk</strong>
+                        </li>
                         <li style="margin-bottom: 0.5rem;"><i class="fas fa-check"
-                                style="color: var(--primary-red); margin-right: 0.5rem;"></i> Visualize colors in your
-                            own space</li>
+                                style="color: var(--primary-red); margin-right: 0.5rem;"></i> Upload room photos for
+                            instant AI visualization</li>
                     </ul>
                 </div>
 
                 <div class="partner-card fade-on-scroll fade-up"
                     style="transition-delay: 0.2s; background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-card); border: 2px solid #fecaca;">
-                    <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">For Contractors</h3>
+                    <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">For Dealers</h3>
                     <ul style="list-style: none; color: var(--text-light);">
                         <li style="margin-bottom: 0.5rem;"><i class="fas fa-check"
-                                style="color: var(--primary-red); margin-right: 0.5rem;"></i> Check real-time stock
-                            availability</li>
-                        <li style="margin-bottom: 0.5rem;"><i class="fas fa-check"
-                                style="color: var(--primary-red); margin-right: 0.5rem;"></i> Access technical data
-                            sheets instantly</li>
-                        <li style="margin-bottom: 0.5rem;"><i class="fas fa-check"
-                                style="color: var(--primary-red); margin-right: 0.5rem;"></i> Place bulk orders via chat
+                                style="color: var(--primary-red); margin-right: 0.5rem;"></i> Automate orders for swift
+                            <strong>Depot delivery</strong>
                         </li>
+                        <li style="margin-bottom: 0.5rem;"><i class="fas fa-check"
+                                style="color: var(--primary-red); margin-right: 0.5rem;"></i> Troubleshoot tinting
+                            machine calibration instantly</li>
+                        <li style="margin-bottom: 0.5rem;"><i class="fas fa-check"
+                                style="color: var(--primary-red); margin-right: 0.5rem;"></i> Check credit limits &
+                            invoice status in real-time</li>
                     </ul>
                 </div>
 
                 <div class="partner-card fade-on-scroll fade-right"
                     style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-soft);">
-                    <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">For Dealers</h3>
+                    <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">For Contractors</h3>
                     <ul style="list-style: none; color: var(--text-light);">
                         <li style="margin-bottom: 0.5rem;"><i class="fas fa-check"
-                                style="color: var(--primary-red); margin-right: 0.5rem;"></i> Automatic stock
-                            replenishment</li>
+                                style="color: var(--primary-red); margin-right: 0.5rem;"></i> Confirm availability at
+                            <strong>Nairobi/Mombasa Depots</strong>
+                        </li>
                         <li style="margin-bottom: 0.5rem;"><i class="fas fa-check"
-                                style="color: var(--primary-red); margin-right: 0.5rem;"></i> Instant tinting machine
-                            support</li>
+                                style="color: var(--primary-red); margin-right: 0.5rem;"></i> Download TDS for
+                            industrial & decorative paints</li>
                         <li style="margin-bottom: 0.5rem;"><i class="fas fa-check"
-                                style="color: var(--primary-red); margin-right: 0.5rem;"></i> Manage trade account
-                            queries</li>
+                                style="color: var(--primary-red); margin-right: 0.5rem;"></i> Secure bulk pricing for
+                            large projects instantly</li>
                     </ul>
                 </div>
 
@@ -229,8 +238,10 @@
         <div class="container">
             <h2 style="font-size: 2.5rem; margin-bottom: 1rem; color: var(--text-dark); font-weight: 800;">Experience it
                 Live</h2>
-            <p style="font-size: 1.25rem; color: var(--text-light); margin-bottom: 0.5rem;">The AI Design Consultant is
-                active on this page.</p>
+            <p style="font-size: 1.25rem; color: var(--text-light); margin-bottom: 0.5rem;">This AI Pilot is
+                <strong>fully trained</strong> on the Crown Paints knowledge base. Ask about prices, technical specs, or
+                colors.
+            </p>
             <p style="font-size: 1.25rem; color: var(--primary-red); font-weight: 700; display: inline-flex; align-items: center; gap: 0.5rem; cursor: pointer;"
                 onclick="document.querySelector('iframe#chat-widget').contentWindow.document.querySelector('.chat-launcher').click()">
                 Click the chat icon in the bottom-right corner ↘
@@ -246,30 +257,34 @@
     <!-- Minimal Footer -->
     <footer>
         <div class="container" style="padding: 2rem 0; text-align: center;">
-            <p style="color: #64748b; font-size: 0.875rem;">&copy; 2026 Crown Paints AI Pilot. Powered by Essence
-                Automations.</p>
+            <p style="color: #64748b; font-size: 0.875rem;">&copy; 2026 Crown Paints AI Pilot. Powered by <a
+                    href="https://essenceautomations.com/ai-chat" target="_blank"
+                    style="color: inherit; text-decoration: underline;">Essence
+                    Automations</a>.</p>
         </div>
     </footer>
 
     <script>
-        // Intersection Observer for fade-in animations
+        // Intersection Observer for bidirectional fade-in/out animations
         document.addEventListener("DOMContentLoaded", function () {
             const observerOptions = {
                 root: null,
                 rootMargin: '0px',
-                threshold: 0.1
+                threshold: 0.15 // Slightly higher threshold for better trigger
             };
 
             const observer = new IntersectionObserver((entries, observer) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('visible');
-                        observer.unobserve(entry.target); // Only animate once
+                    } else {
+                        // Remove the class when out of view to re-trigger animation on next scroll
+                        entry.target.classList.remove('visible');
                     }
                 });
             }, observerOptions);
 
-            const fadeElements = document.querySelectorAll('.fade-on-scroll');
+            const fadeElements = document.querySelectorAll('.fade-on-scroll, .animate-stagger-1, .animate-stagger-2, .animate-stagger-3, .animate-stagger-4');
             fadeElements.forEach(el => observer.observe(el));
         });
     </script>
