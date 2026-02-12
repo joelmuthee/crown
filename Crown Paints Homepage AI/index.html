@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crown Paints Kenya - AI Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .service-icon i {
+            font-size: 24px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <a href="#" class="top-link"><i class="fas fa-chart-line"></i> XPERIENCE CENTERS</a>
+            <a href="#" class="top-link"><i class="fas fa-shopping-cart"></i> BUY PAINTS ONLINE</a>
+            <a href="#" class="top-link"><i class="fas fa-phone-alt"></i> 0709887000</a>
+            <a href="#" class="top-link"><i class="fas fa-map-marker-alt"></i> WHERE TO BUY</a>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container nav-container">
+            <a href="#" class="logo-link">
+                <!-- Using placeholder for Crown Logo if external image fails -->
+                <img src="crown-logo-v2.png" alt="Crown Paints Kenya PLC" class="crown-logo"
+                    onerror="this.src='https://via.placeholder.com/150x60?text=CROWN+PAINTS'">
+            </a>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Activity</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#"><i class="fas fa-search"></i> Search</a></li>
+                </ul>
+            </nav>
+
+            <button class="mobile-menu-btn"
+                style="display:none; background:none; border:none; font-size:24px; color:var(--deep-blue);">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- AI Hero Section -->
+    <section class="ai-hero">
+        <div class="chat-interface-card">
+            <div class="chat-header">
+                <i class="fas fa-robot fa-lg"></i>
+                <div class="header-text">
+                    <h2>Crown AI Assistant</h2>
+                    <span style="font-size: 11px; opacity: 0.9;">Online • Ready to help</span>
+                </div>
+            </div>
+
+            <div class="chat-body" id="chat-messages">
+                <!-- AI Welcome Message -->
+                <div class="message ai">
+                    Hello! I'm your Crown Paints AI Assistant. 🎨<br>
+                    I can help you find the perfect color, calculate paint quantities, or give expert product advice.
+                    How can I help you today?
+                </div>
+
+                <!-- Demo User Message (Static) -->
+                <div class="message user">
+                    I'm painting my living room and need a warm neutral color.
+                </div>
+
+                <!-- AI Response (Static) -->
+                <div class="message ai">
+                    For a warm neutral living room, I recommend our **"Soft Stone"** or **"Creamy White"** from the
+                    Crown Solo range. Would you like to see these on a visualizer?
+                </div>
+
+                <!-- Pending Indicator -->
+                <div class="message ai typing-indicator" style="width: 40px; padding: 10px;">
+                    <span style="animation: blink 1s infinite">.</span><span
+                        style="animation: blink 1s infinite 0.2s">.</span><span
+                        style="animation: blink 1s infinite 0.4s">.</span>
+                </div>
+            </div>
+
+            <div class="chat-input-area">
+                <input type="text" class="chat-input" placeholder="Type a message...">
+                <button class="send-btn">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest News Bar -->
+    <div class="news-bar">
+        <div class="container" style="display:flex; width:100%;">
+            <div class="news-label">Latest News:</div>
+            <div class="news-content">
+                <marquee scrollamount="5">Crown Paints Presents Prize Giving Award to UON Students • New "Crown Your
+                    Space" Campaign Launches Today!</marquee>
+            </div>
+        </div>
+    </div>
+
+    <!-- Our Services Heading -->
+    <section class="services-section">
+        <div class="container">
+            <h2 class="services-title">OUR SERVICES</h2>
+            <div class="service-icon">
+                <i class="fas fa-paint-brush"></i>
+            </div>
+            <div style="height: 3px; width: 60px; background: #5AA1E3; margin: 20px auto 0;"></div>
+        </div>
+    </section>
+
+    <!-- Paint Calculator Tab -->
+    <div class="paint-calc-tab">
+        PAINT CALCULATOR
+    </div>
+
+    <!-- Scripts -->
+    <style>
+        @keyframes blink {
+            0% {
+                opacity: .2;
+            }
+
+            20% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: .2;
+            }
+        }
+    </style>
+
+</body>
+
+</html>
