@@ -332,9 +332,9 @@ header {
 
 @media (max-width: 768px) {
     .hero h1 {
-        font-size: 1.75rem;
-        /* Drastically reduced */
-        margin-bottom: 0.25rem;
+        font-size: 2.25rem;
+        /* Increased for impact */
+        margin-bottom: 0.5rem;
         line-height: 1.1;
     }
 
