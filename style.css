@@ -171,33 +171,53 @@ header {
 
     .nav-links {
         display: flex !important;
-        /* Always show links */
         flex-direction: row;
-        /* Keep links in a row if they fit, or wrap */
+        flex-wrap: nowrap;
+        /* Force single line */
         position: static;
         box-shadow: none;
         background: transparent;
         padding: 0;
-        width: auto;
+        width: 100%;
         border: none;
         justify-content: center;
-        flex-wrap: wrap;
-        gap: 1rem;
+        gap: 0.5rem;
+        /* Tighter gap */
         border-radius: 0;
+        align-items: center;
     }
 
     .nav-links li {
         width: auto;
+        flex-shrink: 0;
     }
 
     .nav-links a {
-        font-size: 0.9rem;
-        padding: 0.5rem;
+        font-size: 0.8rem;
+        /* Smaller font */
+        padding: 0.4rem 0.5rem;
+        white-space: nowrap;
+    }
+
+    /* Remove button styling on mobile to save space, just make it text */
+    .nav-cta {
+        background: transparent !important;
+        color: var(--primary-red) !important;
+        padding: 0.4rem 0.5rem !important;
+        box-shadow: none !important;
+        font-weight: 700 !important;
+        border: 1px solid var(--primary-red);
+        /* distinct border instead */
+    }
+
+    .nav-cta:hover {
+        transform: none;
+        box-shadow: none;
     }
 
     .logo-container img {
-        height: 50px;
-        /* Slightly smaller logo */
+        height: 60px;
+        /* Keep logo decent size */
     }
 }
 
