@@ -88,42 +88,60 @@ header {
 
 .nav-links {
     display: flex;
-    gap: 2.5rem;
+    gap: 1.5rem;
     list-style: none;
     margin: 0;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 0.5rem 1.5rem;
+    border-radius: 99px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(10px);
 }
 
 .nav-links a {
     text-decoration: none;
     color: var(--text-dark);
-    font-weight: 600;
-    font-size: 1rem;
+    font-weight: 500;
+    font-size: 0.95rem;
     position: relative;
-    padding: 0.5rem 0;
+    padding: 0.5rem 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:not(.nav-cta):hover {
+    color: var(--primary-red);
 }
 
 .nav-links a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: var(--primary-red);
-    transition: width 0.3s ease;
+    content: none;
+    /* Removing previous underline effect */
 }
 
-.nav-links a:hover::after {
-    width: 100%;
+/* New CTA Button Style in Nav */
+.nav-cta {
+    background: var(--primary-red);
+    color: white !important;
+    padding: 0.6rem 1.5rem !important;
+    border-radius: 99px;
+    font-weight: 600 !important;
+    box-shadow: 0 4px 12px rgba(237, 28, 36, 0.2);
+    transition: all 0.3s ease;
+}
+
+.nav-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(237, 28, 36, 0.3);
+    background: #c4131a;
 }
 
 /* Ultra-Modern Hero */
 .hero {
-    min-height: 90vh;
+    min-height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem 0 6rem;
+    padding: 1rem 0 3rem;
     /* Reduced top padding */
     position: relative;
     overflow: hidden;
@@ -201,25 +219,25 @@ header {
 }
 
 .badge {
-    background: rgba(237, 28, 36, 0.08);
+    background: #ffe4e6;
     color: var(--primary-red);
-    padding: 0.6rem 1.4rem;
+    padding: 0.5rem 1.25rem;
     border-radius: 99px;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
+    text-transform: none;
+    letter-spacing: normal;
     display: inline-block;
-    margin-bottom: 2.5rem;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(237, 28, 36, 0.15);
-    box-shadow: 0 8px 20px rgba(237, 28, 36, 0.1);
+    margin-bottom: 1.5rem;
+    border: none;
+    box-shadow: none;
+    line-height: 1;
 }
 
 .hero h1 {
     font-size: 3.5rem;
     /* Mobile base */
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.75rem;
     color: var(--text-dark);
     letter-spacing: -0.04em;
     line-height: 1.1;
@@ -245,7 +263,7 @@ header {
 .hero p {
     font-size: 1.25rem;
     color: var(--text-light);
-    margin-bottom: 3.5rem;
+    margin-bottom: 2.5rem;
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
@@ -509,11 +527,12 @@ header {
 }
 
 .tech-stat {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 800;
     color: white;
     font-family: var(--font-heading);
     display: block;
+    white-space: nowrap;
     margin-top: auto;
 }
 
@@ -717,8 +736,4 @@ footer {
     100% {
         box-shadow: 0 0 0 0 rgba(237, 28, 36, 0);
     }
-}
-
-.badge {
-    animation: softPulse 2s infinite;
 }

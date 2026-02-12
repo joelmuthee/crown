@@ -20,7 +20,8 @@
             </div>
             <ul class="nav-links">
                 <li><a href="#features">AI Features</a></li>
-                <li><a href="#demo">Live Demo</a></li>
+                <li><a href="#tech-stack">Technology</a></li>
+                <li><a href="#demo" class="nav-cta">Live Demo</a></li>
             </ul>
         </div>
     </header>
@@ -43,9 +44,9 @@
                     <div>Instant Responses</div>
                 </div>
                 <div class="stat-box">
-                    <div>95+</div>
-                    <div>Languages Supported <br><span
-                            style="font-size: 0.75rem; opacity: 0.8; text-transform: none;">(English, Kiswahili, Hindi
+                    <div>90+</div>
+                    <div>Languages <br><span style="font-size: 0.75rem; opacity: 0.8; text-transform: none;">(English,
+                            Kiswahili, Hindi
                             etc)</span></div>
                 </div>
                 <div class="stat-box">
@@ -103,7 +104,7 @@
                     <h3>Global Scale</h3>
                     <p>Serving over 1.2 billion actions per month. Scalable architecture that grows with Crown Paints.
                     </p>
-                    <span class="tech-stat">500k+ Business</span>
+                    <span class="tech-stat" style="white-space: nowrap;">500k+ Businesses</span>
                 </div>
             </div>
         </div>
@@ -147,7 +148,7 @@
                         <i class="fas fa-language"></i>
                     </div>
                     <h3>Speak Your Language</h3>
-                    <p>Our AI converses fluently in 95+ languages, making expert advice accessible to everyone
+                    <p>Our AI converses fluently in 90+ languages, making expert advice accessible to everyone
                         regardless of their native tongue.</p>
                 </div>
                 <div class="feature-card fade-on-scroll fade-up" style="transition-delay: 0.2s;">
@@ -163,8 +164,9 @@
                         <i class="fas fa-comments"></i>
                     </div>
                     <h3>Everywhere You Are</h3>
-                    <p>Start a chat on the website, continue on WhatsApp or Instagram. The context follows you for a
-                        seamless experience.</p>
+                    <p>Connect on <strong>Webchat, Facebook, or Instagram</strong>. Our AI is fully trained on
+                        <strong>every Crown Paints product</strong> to give you expert advice anywhere.
+                    </p>
                 </div>
             </div>
         </div>
@@ -248,18 +250,6 @@
             </p>
         </div>
         <!-- Live Chat Widget Script -->
-        <script src="https://widgets.leadconnectorhq.com/loader.js"
-            data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
-            data-widget-id="698c332e57721902740e360a">
-            </script>
-        <style>
-            /* Force widget visibility above all sections */
-            #chat-widget-container {
-                z-index: 9999 !important;
-                display: block !important;
-                visibility: visible !important;
-            }
-        </style>
     </section>
 
     <!-- Minimal Footer -->
@@ -296,6 +286,23 @@
             fadeElements.forEach(el => observer.observe(el));
         });
     </script>
+    <!-- Live Chat Widget Script -->
+    <script src="https://widgets.leadconnectorhq.com/loader.js"
+        data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
+        data-widget-id="698c332e57721902740e360a">
+        </script>
+    <style>
+        /* Force widget visibility globally */
+        #chat-widget-container,
+        .chat-widget-container,
+        iframe#chat-widget {
+            z-index: 2147483647 !important;
+            /* Max integer value */
+            display: block !important;
+            visibility: visible !important;
+            position: fixed !important;
+        }
+    </style>
 </body>
 
 </html>
