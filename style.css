@@ -244,6 +244,37 @@ header {
     font-weight: 800;
 }
 
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+        /* Drastically reduced for mobile */
+        margin-bottom: 0.5rem;
+    }
+
+    .hero h1 br {
+        display: none;
+        /* Let text flow naturally on mobile */
+    }
+
+    .hero-content .badge {
+        margin-bottom: 1rem;
+        /* Tighter spacing */
+    }
+
+    .hero p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+        line-height: 1.5;
+    }
+
+    .hero {
+        padding-top: 2rem;
+        /* Ensure content starts higher up */
+        min-height: auto;
+        /* Allow content to dictate height on very short screens */
+    }
+}
+
 @media (min-width: 768px) {
     .hero h1 {
         font-size: 5.5rem;
