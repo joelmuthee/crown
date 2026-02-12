@@ -503,6 +503,7 @@ header {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: -0.02em;
+    white-space: nowrap;
 }
 
 @media (min-width: 1024px) {
