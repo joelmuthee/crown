@@ -684,6 +684,22 @@ header {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 2.5rem;
+    position: relative;
+    z-index: 2;
+}
+
+.colored-scroller {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(115deg, #FF0080, #7928CA, #FF0080);
+    opacity: 0.15;
+    filter: blur(100px);
+    z-index: 0;
+    pointer-events: none;
 }
 
 .feature-card {
