@@ -38,8 +38,6 @@ body {
     color: var(--text-dark);
     background-color: var(--bg-white);
     position: relative;
-    overflow-x: hidden !important;
-    width: 100%;
 }
 
 html {
