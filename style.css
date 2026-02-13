@@ -37,8 +37,6 @@ body {
     line-height: 1.6;
     color: var(--text-dark);
     background-color: var(--bg-white);
-    overflow-x: hidden;
-    width: 100%;
     position: relative;
 }
 
@@ -53,17 +51,15 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--primary-red);
+    background: linear-gradient(to bottom, var(--primary-red), #2563eb);
     border-radius: 5px;
 }
 
-::-webkit-scrollbar-thumb:hover {
-    background: #c4131a;
-}
+
 
 h1,
 h2,
@@ -509,10 +505,11 @@ header {
 }
 
 /* Stat Typography */
+/* Stat Typography */
 .stat-box div:first-child {
     font-family: var(--font-heading);
-    font-size: 2.5rem;
-    /* Smaller font for mobile */
+    font-size: 2rem;
+    /* Smaller uniform font */
     font-weight: 800;
     line-height: 1;
     margin-bottom: 0.5rem;
@@ -526,7 +523,8 @@ header {
 
 @media (min-width: 1024px) {
     .stat-box div:first-child {
-        font-size: 3.5rem;
+        font-size: 2.25rem;
+        /* Uniform desktop size */
         margin-bottom: 0.75rem;
     }
 }
