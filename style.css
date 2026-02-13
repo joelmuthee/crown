@@ -53,23 +53,7 @@ html {
 
 
 
-/* Custom Scrollbar */
-::-webkit-scrollbar {
-    width: 5px;
-    background: transparent;
-    /* Optional: ensures container is transparent */
-}
 
-::-webkit-scrollbar-track {
-    background: transparent;
-    display: none;
-    /* Hide the track element completely */
-}
-
-::-webkit-scrollbar-thumb {
-    background: linear-gradient(to bottom, var(--primary-red), #2563eb);
-    border-radius: 10px;
-}
 
 
 h1,
