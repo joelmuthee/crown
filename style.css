@@ -45,8 +45,6 @@ body {
 html {
     overflow-x: hidden !important;
     width: 100%;
-    scrollbar-width: thin;
-    scrollbar-color: var(--primary-red) transparent;
 }
 
 
