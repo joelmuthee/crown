@@ -688,6 +688,7 @@ header {
 .features {
     padding: 8rem 0;
     background: var(--bg-light);
+    overflow: hidden;
 }
 
 .features h2 {
