@@ -39,7 +39,7 @@ body {
     background-color: var(--bg-white);
     position: relative;
     overflow-x: hidden !important;
-    overflow-y: visible !important;
+    overflow-y: auto !important;
     width: 100%;
 }
 
@@ -48,6 +48,7 @@ html {
     width: 100%;
     scrollbar-width: thin;
     scrollbar-color: var(--primary-red) transparent;
+    overflow-y: scroll;
 }
 
 
