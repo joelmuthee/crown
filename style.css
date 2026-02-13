@@ -56,6 +56,21 @@ html {
 
 
 
+/* Custom Scrollbar - Minimal */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, var(--primary-red), #2563eb);
+    border-radius: 10px;
+}
+
 h1,
 h2,
 h3,
