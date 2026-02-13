@@ -45,10 +45,6 @@ body {
 html {
     overflow-x: hidden !important;
     width: 100%;
-    scrollbar-width: thin;
-    /* Firefox */
-    scrollbar-color: auto;
-    /* Reset to default if supported */
 }
 
 
@@ -62,6 +58,7 @@ html {
 ::-webkit-scrollbar {
     width: 6px;
     height: 6px;
+    background: transparent !important;
 }
 
 ::-webkit-scrollbar-track,
