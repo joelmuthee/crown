@@ -60,8 +60,9 @@ html {
     height: 6px;
 }
 
-::-webkit-scrollbar-track {
-    background: transparent;
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-corner {
+    background: transparent !important;
 }
 
 ::-webkit-scrollbar-thumb {
