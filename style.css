@@ -8,6 +8,17 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+/* Make images and other media responsive */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 :root {
     --primary-red: #ED1C24;
     --accent-yellow: #FFD100;
