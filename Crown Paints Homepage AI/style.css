@@ -5,6 +5,17 @@
     box-sizing: border-box;
 }
 
+/* Make images responsive */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     color: #666;
